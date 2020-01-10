@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+
+.full-screen {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    rgba(115, 115, 115, 1) 1%,
+    rgba(64, 64, 64, 1) 100%
+  );
+}
+
+@keyframes move-formula {
+  form {
+    right: 40vmin;
+  }
+  to {
+    right: -100vw;
+  }
+}
+
+#formula {
+  position: relative;
+  right: 40vmin;
+  width: 40vmin;
+  height: auto;
+  animation-name: move-formula;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
